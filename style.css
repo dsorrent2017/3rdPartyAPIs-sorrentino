@@ -1,0 +1,182 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+/* #hourScheduler */
+#hourSchedulerContainer {
+  /* background-color: #73919b;   */
+  background-color: #b6d7e2;  
+  /* provides spacing between the top and bottom nav bars and the content */
+  margin-top: 20px;
+  margin-bottom: 80px;
+  
+  /* provide spaceing around the text */
+  padding: 40px;
+} 
+
+.hourSchedulerRow {
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 1em;
+  line-height: 1.5;
+  border-radius: 15px;
+}
+
+.hourSpan {
+  background-color: linen;  
+  color: black;
+  height:100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px 0px 0px 15px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+/* style container with daily plan */
+.dailyPlan {
+  color: black;  
+  font-size: 12pt;
+  height:100%;
+  width: 100%;
+}
+
+.saveIcon {
+  background-color: darkturquoise;
+  color: linen;
+  border-radius: 0px 15px 15px 0px;
+  /* float: right; */
+  font-size: 1.5em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.footer {
+  /* set text properties */
+  background-color: #666;
+  
+  /* sets height of footer*/
+  height: 10%;
+  
+  /* sets properties for footer border*/
+  border-top: solid;
+  border-top-color: #b6d7e2;  
+  border-top-width: 8px;
+}
+
+.footer-text, .header-text {
+  /* forces text across the entire screen so it has a center */
+  width: 100%;
+  text-align: center;
+
+  font-size: 10px;
+  color:linen; 
+}
+
+/* media query for screen size to be applied to center text to switch at same time as navbar */
+@media (max-width: 768px) {
+  .container-fluid {
+    /* removes paddding on either side */
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hourSchedulerRow {
+    height: 100%;
+    border-radius: 10;
+    margin: 10px;
+  }
+
+  .saveIcon { border-radius: 0 0 15px 15px; }
+
+  .hourSpan { border-radius: 15px 15px 0 0; }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+.wrapper
+{ 
+  padding: 20px;     
+} 
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+.shadowPulse {
+  animation: shadow-pulse 1s infinite;
+}
