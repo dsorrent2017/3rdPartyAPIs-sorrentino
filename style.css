@@ -13,6 +13,7 @@ textarea{
   padding: 10px;
 }
 
+/* Jumbotron is a generic bootstrap class that starts out as a big gray box to be decorated in the CSS below */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -70,9 +71,9 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-/* #hourScheduler */
+/* Provide separation between the header and the table of time reservations */
 #hourSchedulerContainer {
-  /* background-color: #73919b;   */
+
   background-color: #b6d7e2;  
   /* provides spacing between the top and bottom nav bars and the content */
   margin-top: 20px;
@@ -119,28 +120,6 @@ textarea{
   width: 100%;
   height: 100%;
   text-align: center;
-}
-
-.footer {
-  /* set text properties */
-  background-color: #666;
-  
-  /* sets height of footer*/
-  height: 10%;
-  
-  /* sets properties for footer border*/
-  border-top: solid;
-  border-top-color: #b6d7e2;  
-  border-top-width: 8px;
-}
-
-.footer-text, .header-text {
-  /* forces text across the entire screen so it has a center */
-  width: 100%;
-  text-align: center;
-
-  font-size: 10px;
-  color:linen; 
 }
 
 /* media query for screen size to be applied to center text to switch at same time as navbar */
